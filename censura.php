@@ -17,12 +17,24 @@
                 $text = $_POST['text'];
                 $censura = $_POST['censura'];
                 $censoredText = str_replace($censura , "***" , $text);
+
             }
             else
             {
                 $censoredText = "Valore invalido";
             }
         ?>
+
+        <h1 class="py-3">
+            <?php echo 'Lunghezza del testo originale: '.strlen($text);?>
+        </h1>
+
+        <h1 class="py-3">
+            <?php echo "$text";?>
+        </h1>
+        <h1 class="py-3">
+            <?php echo 'Lunghezza del testo censurato: '.strlen($censoredText);?>
+        </h1>
 
         <h1 class="py-3">
             <?php echo "$censoredText";?>
