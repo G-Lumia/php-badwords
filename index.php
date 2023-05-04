@@ -17,7 +17,7 @@
      
           <form class="d-flex flex-column align-items-center gap-3 py-5" action="censura.php" method="POST">
                <label for="text">Testo: </label>
-               <input class="w-100" type="text" name="text" id="text"> 
+               <textarea class="w-100" rows="8" cols="50" name="text" id="text"></textarea> 
                <label for="censura">Censura: </label>
                <input type="text" name="censura" id="censura">
                <input type="submit" value="invia">
@@ -29,4 +29,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
-
